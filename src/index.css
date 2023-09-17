@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+
+/* Set a background color for all pages */
+body {
+  background-color: #f9f9f9; /* Replace with your desired background color */
+}
+
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #3b3939;
+}
+/* Navbar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 2px solid #f2f2f2;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+}
+
+.navbar h1 {
+  color: #f1356d;
+  font-size: 24px;
+  margin-right: auto;
+}
+
+.navbar .links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  color: #333;
+  transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+}
+
+.navbar a:hover {
+  color: #f1356d;
+  background-color: rgba(255, 255, 255, 0.8); /* Example of a semi-transparent background */
+  /* Other styles for links on hover */
+}
+
+/* Fancier Content Section */
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; /* Add a transform transition for a subtle hover effect */
+}
+
+/* Add a hover effect to scale the content section slightly */
+.content:hover {
+  transform: scale(1.02); /* Increase the size slightly on hover */
+}
+
+/* You can add more styles as needed to make it even fancier */
+
+
+/* Adjust the background color of the navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.4); /* Example of a semi-transparent background */
+  /* Other styles for the navbar */
+}
+/* Blog Previews / List */
+.blog-preview {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #fff;
+  position: relative;
+}
+
+.blog-preview:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.blog-preview h2 {
+  font-size: 24px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-preview p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+  color: #f1356d;
+  font-weight: bold;
+}
+
+/* Enhanced Blog List Title */
+.blog-list-title {
+  font-size: 30px; /* Increase the font size for emphasis */
+  color: #f1356d;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase; /* Convert text to uppercase for a bold look */
+  letter-spacing: 2px; /* Add some letter spacing for better readability */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+/* You can further customize the styles to match your design preferences */
+
+
+
+/* Position the Delete Button to the top right corner */
+.DeleteButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.DeleteButton:hover {
+  background-color: #ff0000;
+}
+
+
+/* Enhanced Blog Details Page */
+.blog-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: justify; /* Justify text for a clean and balanced look */
+}
+
+.blog-details h2 {
+  font-size: 30px; /* Increase the font size for headings */
+  color: #f1356d;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Convert text to uppercase for emphasis */
+}
+
+.blog-details p {
+  font-size: 20px; /* Slightly increase font size for paragraphs */
+  color: #444; /* Use a slightly darker color for better readability */
+  line-height: 1.8; /* Increase line height for improved readability */
+  margin-bottom: 20px;
+}
+
+/* You can further customize the styles to match your design preferences */
+
+
+
+/* .blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.create h2 {
+  font-size: 24px;
+  color: #f1356d;
+  margin-bottom: 20px;
+}
+
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.create input:focus,
+.create textarea:focus,
+.create select:focus {
+  border-color: #f1356d;
+}
+
+.create-button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.create button:hover {
+  background: #d8005f;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem; /* Add font size for the success message */
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem; /* Add font size for the success message */
+}
+/* Add more styles and interactivity as needed */
